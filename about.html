@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dinithi Jayathilaka — Traveler</title>
+  <meta name="description" content="Dinithi Jayathilaka — solo traveler who loves tropical vibes, blue skies and the open sea." />
+  <style>
+    :root{
+      --bg:#f7fbff;
+      --card:#ffffff;
+      --muted:#6b7280;
+      --accent:#0ea5a0;
+      --accent-2:#136f63;
+      --radius:14px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:linear-gradient(180deg,var(--bg),#eef9f7 60%);
+      color:#0f172a;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      padding:32px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      min-height:100vh;
+    }
+
+    .card{
+      width:100%;
+      max-width:920px;
+      background:var(--card);
+      border-radius:var(--radius);
+      box-shadow:0 10px 30px rgba(16,24,40,0.08);
+      padding:28px;
+      display:grid;
+      grid-template-columns: 260px 1fr;
+      gap:24px;
+      align-items:start;
+    }
+
+    @media (max-width:720px){
+      .card{grid-template-columns: 1fr; padding:20px;}
+    }
+
+    .profile-photo{
+      width:100%;
+      border-radius:12px;
+      overflow:hidden;
+      background:linear-gradient(180deg,#e6fcfa,#dff6f3);
+      border:1px solid rgba(19,111,99,0.06);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      min-height:260px;
+    }
+
+    .profile-photo img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+    }
+
+    .name{
+      margin:0 0 6px 0;
+      font-size:22px;
+      letter-spacing:0.2px;
+    }
+
+    .subtitle{
+      margin:0;
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    .about{
+      margin-top:6px;
+      line-height:1.6;
+      color:#0b1220;
+    }
+
+    .section{
+      margin-top:18px;
+    }
+
+    .interests{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      margin-top:10px;
+    }
+
+    .tag{
+      background:rgba(14,165,160,0.08);
+      color:var(--accent-2);
+      padding:8px 12px;
+      border-radius:999px;
+      font-size:13px;
+      border:1px solid rgba(14,165,160,0.08);
+    }
+
+    .contact{
+      margin-top:14px;
+      display:flex;
+      gap:12px;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+
+    .btn{
+      display:inline-block;
+      background:var(--accent);
+      color:#fff;
+      padding:10px 14px;
+      border-radius:10px;
+      text-decoration:none;
+      font-weight:600;
+      box-shadow:0 6px 18px rgba(14,165,160,0.18);
+    }
+
+    .meta{
+      color:var(--muted);
+      font-size:13px;
+    }
+
+    footer{
+      margin-top:18px;
+      color:var(--muted);
+      font-size:13px;
+    }
+
+    /* small decorative wave */
+    .wave{
+      margin-top:12px;
+      width:100%;
+      height:42px;
+      overflow:hidden;
+      pointer-events:none;
+    }
+    .wave svg{display:block; width:120%; transform:translateX(-8%);}
+  </style>
+</head>
+<body>
+  <main class="card" role="main" aria-labelledby="page-title">
+    <!-- Left column: photo -->
+    <aside>
+      <div class="profile-photo" aria-hidden="false">
+        <!-- Replace 'profile.jpg' with your real photo (square or landscape works).
+             If you don't have one, place a file named profile.jpg in the same folder
+             or replace the src with an online image URL. -->
+        <img src="profile.jpeg" alt="Profile photo of Dinithi Jayathilaka">
+      </div>
+
+      <div class="section" style="margin-top:14px;">
+        <p class="meta">Location</p>
+        <p style="margin:6px 0 0 0">Sri Lanka</p>
+      </div>
+
+      <div class="section">
+        <p class="meta">Contact</p>
+        <div class="contact">
+          <a class="btn" href="mailto:dinithijayathilaka2222@gmail.com">Email Me</a>
+          <!-- remove or replace the phone link if you have a number -->
+          <a class="meta" href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a>
+        </div>
+      </div>
+    </aside>
+
+    <section>
+      <h1 id="page-title" class="name">Dinithi Jayathilaka</h1>
+      <p class="subtitle">Solo traveler • Tropical soul • Coffee & sea lover</p>
+
+      <div class="about section">
+        <strong>About me</strong>
+        <p style="margin-top:8px;">
+          I travel alone because it frees my soul. I feel most alive beneath wide blue skies and beside endless blue seas — warm sand beneath my feet, salt on the breeze, and sunlight on the water. I’m drawn to tropical islands, slow beach days, and cozy beachfront cafés where time slows and the sea tells its stories. Traveling alone isn’t loneliness for me; it’s where I meet myself and the world, one coastline at a time.
+        </p>
+      </div>
+
+      <div class="section">
+        <strong>Travel interests</strong>
+        <div class="interests" aria-hidden="false">
+          <span class="tag">Tropical Beaches</span>
+          <span class="tag">Solo Island Hopping</span>
+          <span class="tag">Coastal Photography</span>
+          <span class="tag">Beachfront Cafés & Coffee</span>
+          <span class="tag">Slow Travel & Sea Listening</span>
+        </div>
+      </div>
+
+      <div class="section">
+        <strong>Contact information</strong>
+        <p style="margin-top:8px;" class="meta">
+          Email: <a href="mailto:dinithijayathilaka2222@gmail.com">dinithijayathilaka2222@gmail.com</a><br>
+          Instagram: <a href="https://instagram.com/" target="_blank" rel="noopener">@your_handle</a> (replace with your username)
+        </p>
+
+        <footer>
+          <small>Tip: Replace <code>profile.jpg</code> with your portrait. Edit text and links to personalize.</small>
+        </footer>
+      </div>
+
+      <div class="wave" aria-hidden="true">
+       
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M0,32 C150,80 350,0 600,32 C850,64 1050,16 1200,48 L1200 120 L0 120 Z" fill="#e6fcfa" opacity="0.9"></path>
+        </svg>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
